@@ -35,7 +35,7 @@ export const firstRow = {
 
 export const secondRow = {
     'en': {
-        'CapsLock': 'CapsLock',
+        'Tab': 'Tab',
         'KeyQ': 'q',
         'KeyW': 'w',
         'KeyE': 'e',
@@ -47,11 +47,10 @@ export const secondRow = {
         'KeyO': 'o',
         'KeyP': 'p',
         'BracketLeft': ['[', '{'],
-        'BracketRight': [']', '}'],
-        'Delete': 'Del'
+        'BracketRight': [']', '}']
     },
     'ru': {
-        'CapsLock': 'CapsLock',
+        'Tab': 'Tab',
         'KeyQ': 'й',
         'KeyW': 'ц',
         'KeyE': 'у',
@@ -64,13 +63,12 @@ export const secondRow = {
         'KeyP': 'з',
         'BracketLeft': 'х',
         'BracketRight': 'ъ',
-        'Delete': 'Del'
     }
 }
 
 export const thirdRow = {
     'en': {
-        'Tab': 'Tab',
+        'CapsLock': 'CapsLock',
         'KeyA': 'a',
         'KeyS': 's',
         'KeyD': 'd',
@@ -86,7 +84,7 @@ export const thirdRow = {
         'Enter': 'Enter'
     },
     'ru': {
-        'Tab': 'Tab',
+        'CapsLock': 'CapsLock',
         'KeyA': 'ф',
         'KeyS': 'ы',
         'KeyD': 'в',
@@ -117,7 +115,8 @@ export const fourthRow = {
         'Period': ['.', '>'],
         'Slash': ['\/', '?'],
         'ShiftRight': 'Shift',
-        'ArrowUp': '↑'
+        'ArrowUp': '↑',
+        'Delete': 'Del'
     },
     'ru': {
         'ShiftLeft': 'Shift',
@@ -132,7 +131,8 @@ export const fourthRow = {
         'Period': 'ю',
         'Slash': ['.', ','],
         'ShiftRight': 'Shift',
-        'ArrowUp': '↑'
+        'ArrowUp': '↑',
+        'Delete': 'Del'
     }
 }
 
@@ -146,7 +146,7 @@ export const fifthRow = {
         'ControlRight': 'Control',
         'ArrowLeft': '←',
         'ArrowDown': '↓',
-        'Comma': '→'
+        'ArrowRight': '→'
     },
     'ru': {
         'ControlLeft': 'Control',
@@ -157,6 +157,6 @@ export const fifthRow = {
         'ControlRight': 'Control',
         'ArrowLeft': '←',
         'ArrowDown': '↓',
-        'Comma': '→'
+        'ArrowRight': '→'
     }
 }
