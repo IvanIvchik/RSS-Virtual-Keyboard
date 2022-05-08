@@ -1,7 +1,7 @@
 import { firstRow, secondRow, thirdRow, fourthRow, fifthRow } from './elements-keyboard.js';
 
 const listRows = [firstRow, secondRow, thirdRow, fourthRow, fifthRow];
-let language = 'en';
+export let language = 'en';
 
 const createContainer = () => {
     const container = document.createElement('div');
@@ -30,7 +30,7 @@ const createGroupsKeys = (n) => {
 }
 
 const fillingRowKeyboard = () => {
-    for (let i = 1; i < 6; i++) {
+    for (let i = 0; i < 5; i++) {
         createGroupsKeys(i);
     }
 }
@@ -60,8 +60,20 @@ const createKeys = (obj, i) => {
 
 const fillingRowsKeys = () => {
     for (let i = 0; i < listRows.length; i++){
-        createKeys(listRows[i][language], i + 1)
+        createKeys(listRows[i][language], i)
     }
+}
+
+const createOverawe = () => {
+    const overaweSwitchingLanguage = document.createElement('h2');
+    overaweSwitchingLanguage.classList.add('overawe-switching-language');
+    document.querySelector('.container').append(overaweSwitchingLanguage);
+    overaweSwitchingLanguage.textContent = 'Press Control + Shift to switch language';
+
+    const overaweOSDescriptions = document.createElement('h2');
+    overaweOSDescriptions.classList.add('overawe-OS-descriptions');
+    document.querySelector('.container').append(overaweOSDescriptions);
+    overaweOSDescriptions.textContent = 'Application written for Windows';
 }
 
 export const createVirtualKeyboard = () => {
@@ -70,5 +82,6 @@ export const createVirtualKeyboard = () => {
     creatEntryField();
     fillingRowKeyboard();
     fillingRowsKeys();
+    createOverawe();
 }
 
